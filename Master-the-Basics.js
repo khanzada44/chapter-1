@@ -46,3 +46,10 @@ console.log(5 > 30 || 10 < 18.5); //true
 
 
 // ++ --
+let post_increment_a = 10
+let post_increment_b = post_increment_a++;
+console.log(post_increment_b);
+
+let pre_increment_a = 10
+let pre_increment_b = ++pre_increment_a;
+console.log(pre_increment_b);
