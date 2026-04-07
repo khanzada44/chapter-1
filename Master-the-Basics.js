@@ -68,17 +68,17 @@ console.log('a_true', a_false);
 // Math Functions
 
 
-console.log('Math.round', Math.round(10.58)); 
+console.log('Math.round', Math.round(10.58));
 console.log('Math.ceil', Math.ceil(10.1));
 console.log('Math.floor', Math.floor(10.95));
 console.log('Math.trunc', Math.trunc(10.95));
-console.log('Math.pow', Math.pow(5,3));
-console.log('Math.pow', Math.pow(5,3));
+console.log('Math.pow', Math.pow(5, 3));
+console.log('Math.pow', Math.pow(5, 3));
 console.log('Math.sqrt', Math.sqrt(25));
 console.log('Math.cbrt', Math.cbrt(64));
 console.log('Math.abs', Math.abs(-5));
-console.log('Math.max', Math.max(50,90,100,10));
-console.log('Math.min', Math.min(50,90,100,10));
+console.log('Math.max', Math.max(50, 90, 100, 10));
+console.log('Math.min', Math.min(50, 90, 100, 10));
 
 let max_number = 40;
 let min_number = 10;
@@ -95,6 +95,18 @@ let room_length = 10;
 let room_width = 5;
 
 
-console.log('Answer',(room_length * room_width)% 5);
+console.log('Answer', (room_length * room_width) % 5);
 
 
+let Herons_a = 5;
+let Herons_b = 10;
+let Herons_c = 8;
+
+
+let result = ((Herons_a + Herons_b + Herons_c) / 2)
+console.log(Math.sqrt(result * (result - Herons_a) * (result - Herons_b) * (result - Herons_c)));
+
+
+
+let Circumference_a = 10;
+console.log((2 * Math.PI * Circumference_a).toFixed(2));
