@@ -68,26 +68,56 @@ else {
 // more then 400 || Prices Rs 13 unit
 
 
-// let billing_unit = 700;
-// let billing_amount;
-// if (billing_unit > 400) {
-//     billing_amount = (billing_unit - 400) * 13;
-//     billing_unit = 400;
-// }
-// if (billing_unit > 200 && billing_unit <= 400) {
-//     billing_amount += (billing_unit - 200) * 8;
-//     billing_unit = 200;
-// }
-// if (billing_unit > 100 && billing_unit <= 200) {
-//     billing_amount += (billing_unit - 100) * 6;
-//     billing_unit = 100;
-// }
-// billing_amount += billing_unit * 4.20;
+let billing_unit = 700;
+let billing_amount;
+if (billing_unit > 400) {
+    billing_amount = (billing_unit - 400) * 13;
+    billing_unit = 400;
+}
+if (billing_unit > 200 && billing_unit <= 400) {
+    billing_amount += (billing_unit - 200) * 8;
+    billing_unit = 200;
+}
+if (billing_unit > 100 && billing_unit <= 200) {
+    billing_amount += (billing_unit - 100) * 6;
+    billing_unit = 100;
+}
+billing_amount += billing_unit * 4.20;
 
-// console.log(`Your billing amount is ${billing_amount}`);
+console.log(`Your billing amount is ${billing_amount}`);
 
+let pk_rupees = 7653312412;
 
-// Pk Denomination brackdone
-
-// let pk_rupees = 6000;
-// let pk_banknotes = 0;
+if (pk_rupees > 5000) {
+    console.log('Rupees 5000',Math.trunc(pk_rupees / 5000));
+    pk_rupees = pk_rupees % 5000;
+}
+if (pk_rupees > 1000) {
+    console.log('Rupees 1000',Math.trunc(pk_rupees / 1000));
+    pk_rupees = pk_rupees % 1000;
+}
+if (pk_rupees > 500) {
+    console.log('Rupees 500',Math.trunc(pk_rupees / 500));
+    pk_rupees = pk_rupees % 500;
+}
+if (pk_rupees > 100) {
+    console.log('Rupees 100',Math.trunc(pk_rupees / 100));
+    pk_rupees = pk_rupees % 100;
+}
+if (pk_rupees > 50) {
+    console.log('Rupees 50',Math.trunc(pk_rupees / 50));
+    pk_rupees = pk_rupees % 50;
+}
+if (pk_rupees > 20) {
+    console.log('Rupees 20',Math.trunc(pk_rupees / 20));
+    pk_rupees = pk_rupees % 20;
+}
+if (pk_rupees > 10) {
+    console.log('Rupees 10',Math.trunc(pk_rupees / 10));
+    pk_rupees = pk_rupees % 10;
+}
+if (pk_rupees > 5) {
+    console.log('Rupees 5',Math.trunc(pk_rupees / 5));
+    pk_rupees = pk_rupees % 5;
+}
+console.log('Rupees 1',pk_rupees);
