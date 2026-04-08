@@ -89,5 +89,5 @@ else {
 
 // Pk Denomination brackdone
 
-let pk_rupees = 6000;
-let pk_banknotes = 0;
+// let pk_rupees = 6000;
+// let pk_banknotes = 0;
