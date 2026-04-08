@@ -86,7 +86,7 @@ billing_amount += billing_unit * 4.20;
 
 console.log(`Your billing amount is ${billing_amount}`);
 
-let pk_rupees = 7653312412;
+let pk_rupees = 6000;
 
 if (pk_rupees > 5000) {
     console.log('Rupees 5000',Math.trunc(pk_rupees / 5000));
@@ -120,4 +120,17 @@ if (pk_rupees > 5) {
     console.log('Rupees 5',Math.trunc(pk_rupees / 5));
     pk_rupees = pk_rupees % 5;
 }
-console.log('Rupees 1',pk_rupees);
+if (pk_rupees === 1) {
+    console.log('Rupees 1', pk_rupees);
+
+}
+
+
+// Ternary Oprater ? :
+
+12 > 13 ? console.log('true'): console.log('false');
+console.log(13 > 12 ? 'Thirteen is Graterthen Twelve' : 'Thirteen is Not Graterthen Twelve');
+let number_ternary = 10;
+console.log(number_ternary > 0 ? 'Positive' : number_ternary < 0 ? 'Nagativ' : 'zaro');
+
+
