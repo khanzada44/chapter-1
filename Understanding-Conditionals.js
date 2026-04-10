@@ -86,7 +86,7 @@ billing_amount += billing_unit * 4.20;
 
 console.log(`Your billing amount is ${billing_amount}`);
 
-let pk_rupees = 6000;
+let pk_rupees = 12000;
 
 if (pk_rupees > 5000) {
     console.log('Rupees 5000',Math.trunc(pk_rupees / 5000));

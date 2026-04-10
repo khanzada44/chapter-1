@@ -97,6 +97,7 @@ let room_width = 5;
 
 console.log('Answer', (room_length * room_width) % 5);
 
+// triangle area  s=(5+10+8)/2 Heron’s Formula  𝐴=𝑠 *(𝑠−𝑎) *(𝑠−𝑏) *(𝑠−𝑐)
 
 let Herons_a = 5;
 let Herons_b = 10;
